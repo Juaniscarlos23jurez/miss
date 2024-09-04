@@ -95,6 +95,42 @@
   .next {
       right: 10px;
   }
+    .navbar-header .navbar-brand {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-header .navbar-brand img {
+    max-width: 100px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    height: auto;
+}
+
+.navbar-header .navbar-brand:last-child {
+    font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+}
+
+/* Deshabilita el menú colapsable en dispositivos móviles */
+@media (max-width: 767px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+
+    .navbar-header .navbar-brand:last-child {
+        font-size: 14px; /* Ajusta aún más el texto si es necesario */
+    }
+}
 </style>
 </head>
 <body class="html front not-logged-in no-sidebars page-home  pace-done"><header><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMainCollapse"><span class="sr-only">Interruptor de Navegación</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="https://www.gob.mx/"><img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" width="128" height="48" alt="PÃƒÂ¡gina de inicio, Gobierno de MÃƒÂ©xico"></a></div><div class="collapse navbar-collapse" id="navbarMainCollapse"><ul class="nav navbar-nav navbar-right"><li class=""><a href="https://www.gob.mx/tramites">Trámites</a></li><li class=""><a href="https://www.gob.mx/gobierno">Gobierno</a></li><li><a href="https://www.gob.mx/busqueda"><span class="sr-only">Búsqueda</span><i class="icon-search"></i></a></li></ul></div></div></nav></header><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
